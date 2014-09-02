@@ -1,0 +1,99 @@
+﻿Compilación iniciada a las 02/09/2014 02:27:41 p.m..
+     1>Proyecto "A:\vernam\vernam\vernam\vernam\vernam.vcxproj" en el nodo 2 (build destinos).
+     1>InitializeBuildStatus:
+         Aplicando tarea Touch a "Debug\vernam.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\vernam.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\vernam.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt vernam.cpp
+         vernam.cpp
+     1>a:\vernam\vernam\vernam\vernam\vernam.cpp(64): warning C4018: '<' : no coinciden signed/unsigned
+     1>a:\vernam\vernam\vernam\vernam\funciones.h(12): warning C4018: '<' : no coinciden signed/unsigned
+                 a:\vernam\vernam\vernam\vernam\vernam.cpp(61) : vea la referencia a la creación de instancias de plantilla de función 'std::vector<_Ty> StringToAscii<void>(std::string)' que se está compilando
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>a:\vernam\vernam\vernam\vernam\funciones.h(14): error C2664: 'void std::vector<_Ty>::push_back(_Ty &&)' : no se puede convertir el parámetro 1 de 'int' a 'std::string &&'
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+                 Razón: no se puede realizar la conversión de 'int' a 'std::string'
+                 Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
+     1>a:\vernam\vernam\vernam\vernam\funciones.h(16): error C2664: 'std::vector<_Ty>::vector(const std::vector<_Ty> &)' : no se puede convertir el parámetro 1 de 'std::vector<_Ty>' a 'const std::vector<_Ty> &'
+                 with
+                 [
+                     _Ty=int
+                 ]
+                 and
+                 [
+                     _Ty=std::string
+                 ]
+                 and
+                 [
+                     _Ty=int
+                 ]
+                 Razón: no se puede realizar la conversión de 'std::vector<_Ty>' a 'const std::vector<_Ty>'
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+                 and
+                 [
+                     _Ty=int
+                 ]
+                 No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+     1>a:\vernam\vernam\vernam\vernam\funciones.h(27): error C3867: 'std::bitset<_Bits>::to_string': falta la lista de argumentos de la llamada a la función; utilice '&std::bitset<_Bits>::to_string' para crear un puntero al miembro
+                 with
+                 [
+                     _Bits=64
+                 ]
+                 a:\vernam\vernam\vernam\vernam\vernam.cpp(62) : vea la referencia a la creación de instancias de plantilla de función 'std::vector<_Ty> AsciiToBin<void>(std::vector<int>)' que se está compilando
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>a:\vernam\vernam\vernam\vernam\funciones.h(27): error C2679: '=' binario : no se encontró un operador que adopte un operando en la parte derecha de tipo 'std::string (__thiscall std::bitset<_Bits>::* )(char,char) const' (o bien no existe una conversión aceptable)
+                 with
+                 [
+                     _Bits=64
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xstring(707): puede ser 'std::basic_string<_Elem,_Traits,_Ax> &std::basic_string<_Elem,_Traits,_Ax>::operator =(std::basic_string<_Elem,_Traits,_Ax> &&)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xstring(761): o       'std::basic_string<_Elem,_Traits,_Ax> &std::basic_string<_Elem,_Traits,_Ax>::operator =(const std::basic_string<_Elem,_Traits,_Ax> &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xstring(766): o       'std::basic_string<_Elem,_Traits,_Ax> &std::basic_string<_Elem,_Traits,_Ax>::operator =(const _Elem *)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xstring(771): o       'std::basic_string<_Elem,_Traits,_Ax> &std::basic_string<_Elem,_Traits,_Ax>::operator =(_Elem)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+                 al hacer coincidir la lista de argumentos '(std::string, std::string (__thiscall std::bitset<_Bits>::* )(char,char) const)'
+                 with
+                 [
+                     _Bits=64
+                 ]
+     1>Compilación del proyecto terminada "A:\vernam\vernam\vernam\vernam\vernam.vcxproj" (build destinos) -- ERROR.
+
+ERROR al compilar.
+
+Tiempo transcurrido 00:00:00.92
