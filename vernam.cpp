@@ -63,9 +63,21 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	for(int i = 0; i < a.size() ; i++)
 	{
-		cout << a[i] << " --> " <<ascci[i] << " --> " << binary[i] << endl;
+		cout << a[i] << " --> " <<ascci[i] << " --> " << binary[i]  << endl;
 	}
-	
+
+	vector <int>Bin;
+	string BinToAscci;
+
+	Bin =  BintoInt(binary);
+	BinToAscci = InttoAscci(Bin);
+
+	for(int i = 0; i < Bin.size() ; i++)
+	{
+		cout << Bin[i] << endl;
+	}
+	cout << BinToAscci << endl;
+
 	return 0;
 
 }
